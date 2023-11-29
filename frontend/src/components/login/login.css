@@ -1,0 +1,102 @@
+.login-main {
+    position: relative; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .login-main::before {
+    content: "";
+    /* background-image: url('Login.jpg');  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    min-width: 100%;
+    filter: blur(5px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind the content */
+    transition: background-image 0.3s;
+  }
+
+  
+.login-main.student::before {
+  background-image: url('Login.jpg');
+}
+
+.login-main.admin::before {
+  background-image: url('admin.jpg');
+}
+  
+  .login {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the login form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Rest of your existing styles */
+  
+
+.login-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+    
+}
+
+
+
+.login {
+    width: 400px;
+
+    padding: 5rem;
+    text-align: center;  
+    height: 400px;
+    background: rgb(255, 255, 255, 0.8);
+    border: 1px solid rgb(94, 10, 10);
+    box-shadow: 0 15px 15px grey;
+
+    
+}
+
+.login input{
+    border-radius: 8px;
+    border: 2px solid rgb(187, 186, 186);
+    height: 40px;
+    color: rgb(159, 157, 157);
+    margin-top: 15px;
+    padding-top: 5px ;
+    width: 100%;
+    font-size: medium;
+}
+
+.or {
+     
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+
+
+}
+  .login-button{
+    background-color: rgb(18, 85, 168);
+    border: 1px solid rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 1.23 rem;
+    padding: 0.5rem;
+    margin-top: 40px;
+    border-radius: 8px;
+   width: 35%;
+    cursor: pointer;
+ }
+
+ .login-button:hover {
+    background-color:#405c79 ;
+  }

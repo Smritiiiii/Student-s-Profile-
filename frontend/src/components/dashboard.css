@@ -1,0 +1,37 @@
+
+
+
+
+ body {
+  font-size: .875rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; 
+  padding: 48px 0 0; 
+  box-shadow: inset -1px 0 0 rgba(143, 65, 65, 0.1);
+}
+
+@media (max-width: 827px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+
+.sidebar .nav-link {
+  font-weight: 500;
+  font-size: medium;
+  color: #074d87;
+  margin-bottom: 8px;
+  padding-top: 95px;
+}
+
+
+.sidebar .nav-link:hover  {
+  color: rgb(196, 209, 211);
+} 
