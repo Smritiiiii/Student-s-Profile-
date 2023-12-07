@@ -1,9 +1,5 @@
-
-
-
-
- body {
-  font-size: .875rem;
+body {
+  font-size: 0.875rem;
 }
 
 .sidebar {
@@ -11,8 +7,8 @@
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 100; 
-  padding: 48px 0 0; 
+  z-index: 100;
+  padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(143, 65, 65, 0.1);
 }
 
@@ -22,7 +18,6 @@
   }
 }
 
-
 .sidebar .nav-link {
   font-weight: 500;
   font-size: medium;
@@ -31,7 +26,57 @@
   padding-top: 95px;
 }
 
-
-.sidebar .nav-link:hover  {
+.sidebar .nav-link:hover {
   color: rgb(196, 209, 211);
-} 
+}
+
+.MessageContainer {
+  color: black;
+  display: flex;
+  margin: 0.25rem 0rem;
+  flex-direction: column;
+}
+
+.MessageContainer__message--left {
+  background: rgb(238, 238, 238);
+  margin: 0.5rem 0rem;
+  border-radius: 0.4rem;
+  padding: 0.55rem 1.5rem;
+  font-size: 1rem;
+  max-width: 15rem;
+  min-width: 5rem;
+}
+
+.MessageContainer__message--right {
+  align-self: flex-end;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.55rem 1.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  background: slateblue;
+  width: 10rem;
+  margin-right: 1rem;
+  word-break: keep-all;
+}
+
+.MessageContainer__message--user {
+  color: white;
+  background: #0000002d;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 1rem !important;
+}
+
+.styles_scrollable-div__prSCv::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.styles_scrollable-div__prSCv::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.styles_scrollable-div__prSCv::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  outline: 1px solid slategrey;
+}
