@@ -69,7 +69,7 @@ const Dashboard = () => {
           <div className="position-sticky">
             <ul className="nav flex-column">
               <li className="nav-item">
-                <Link to="/dashboard/ChatSystem" className="nav-link">
+                <Link to="/dashboard/Chatbox" className="nav-link">
                   Chat System
                 </Link>
               </li>

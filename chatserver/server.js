@@ -21,10 +21,9 @@ app.get('/', (req, res) => {
     message: 'chat server working fine',
   });
 });
-//todo :-------------when socketio circuit is on ;-)
+
 io.on('connection', (socket) => {
-  //!_____io.on = our circuit [for establishing circuit]
-  //? == after circuit is established
+ 
   console.log('circuit established --serverTerminalMsg');
 
   //! message from admin after successful circuit establishment
@@ -49,7 +48,7 @@ io.on('connection', (socket) => {
   });
   //! on message get from client
   socket.on('message', ({ message, id }) => {
-    io.emit('message', { user: users[id], message, id });
+    io.emit('message', { user: { id: socket.id, name: users[id] }, message });
   });
 
   //! user disconnects
@@ -63,10 +62,10 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(process.env.PORT || 5050, () => {
+server.listen(process.env.PORT || 3001, () => {
   console.log(`Server listening on port 5050`);
 });
 
-app.listen(5051, () => {
+app.listen(5050, () => {
   console.log('server is running on port 5051');
 });
