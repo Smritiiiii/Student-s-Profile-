@@ -11,13 +11,12 @@ const requireAuth = async(req, res, next) => {
    
     const token = req.headers.authorization.split(" " )[1];
   
-    // Verify and decode the token
+    
     const decoded = await jwt.verify(token, process.env.SECRET);
   
-    // Attach the decoded user information to the request
     req.user = decoded;
 
-    // Continue to the next middleware or route
+ 
     next();
   } catch (error) {
   
